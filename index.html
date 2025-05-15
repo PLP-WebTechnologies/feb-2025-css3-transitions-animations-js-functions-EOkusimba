@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PLP Week 7 Web Dev. Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <button class="menu-toggle" onclick="this.parentElement.classList.toggle('menu-open')">
+        <span class="hamburger"></span>
+      </button>
+      <div class="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#story" class="nav-link">Story</a>
+        <a href="#formSection" class="nav-link">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="header">
+    <h1 class="header-title">Coding Beyond Borders and Bugs</h1>
+    <h2 class="header-subtitle">Can killing bugs make the world a better place?...</h2>
+    <button id="changeTextBtn">Change Subtitle</button>
+    <button id="changeColorBtn">Change Header Color</button>
+  </header>
+
+  <main class="main-content">
+    <!-- Interactive hero image that doubles as a gallery -->
+    <img
+      id="heroImage"
+      src="https://images.pexels.com/photos/8885041/pexels-photo-8885041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="A young man coding"
+      class="hero-image"
+    />
+
+    <article id="story" class="story">
+      <h2 class="story-title">Beyond Borders and Bugs</h2>
+      <div class="story-content">
+        <p>
+          Tolu was no tech wizard—not yet. By day, he worked as a client agent at a bustling study abroad agency, helping
+          hopeful students chase dreams across continents. He booked appointments, answered endless emails, and patiently
+          walked anxious parents through visa procedures. He was good at it. But deep down, he craved something more—something
+          he could build with his own hands, something that would outlast a phone call or a stamp on a passport.
+        </p>
+        <p>That craving brought him to the PLP Software Engineering course.</p>
+        <p>
+          Every evening, once the office lights dimmed and the buzz of student inquiries faded, Tolu transformed into a learner.
+          He'd pull out his modest laptop, open up his lessons, and dive into a world that was still foreign to him—variables,
+          loops, syntax errors, Git. At first, it felt like learning a new language with no translator. But there was fire in his belly.
+        </p>
+        <p>He wasn't just learning to code; he was laying the bricks for a future he could shape on his own terms.</p>
+        <p>
+          Tolu dreamed of one day building digital platforms that made education more accessible—perhaps even an app that streamlined
+          study abroad processes for students in underrepresented communities.
+        </p>
+        <p>
+          Balancing work with the PLP course wasn't easy. He'd return home exhausted, only to spend hours debugging a stubborn
+          Python function. Sometimes he questioned himself. Was this really worth it?
+        </p>
+        <p>
+          But then he'd remember the way his heart raced the first time he saw "Hello, World!" printed on his screen. The way each
+          small win felt like a leap.
+        </p>
+        <p>He wasn't just chasing another job. Tolu was chasing impact.</p>
+        <p>
+          Though the journey was long, and the nights even longer, he knew this: his story had only just begun—between visa
+          applications and variables, between clients and code.
+        </p>
+        <p>
+          He wasn't just crossing borders anymore. He was building bridges. Building with the assurance that, in a little while, crossing
+          to the other side would be assured.
+        </p>
+      </div>
+      <button id="addParagraphBtn">Add Paragraph</button>
+      <button id="removeElementBtn">Remove Last Paragraph</button>
+    </article>
+
+    <!-- New Form Section for interactive form validation -->
+    <section id="formSection" class="form-section">
+      <h2>Sign Up</h2>
+      <form id="sampleForm" novalidate>
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" required placeholder="Enter your email" />
+        <small id="emailError" class="error"></small>
+        <br />
+        <label for="passwordInput">Password:</label>
+        <input type="password" id="passwordInput" required placeholder="At least 8 characters" />
+        <small id="passwordError" class="error"></small>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="copyright" class="footer">
+    <p>&copy; 2025 EOkusimba. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
